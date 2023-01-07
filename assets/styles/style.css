@@ -1,17 +1,26 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
 
 }
+
 section {
     width: 1140px;
     margin: 0 auto;
 }
+
 main {
-   margin: 100px 0;
+    margin: 100px 0;
 
 }
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
 
 /* Banner part style  */
 .banner-img {
@@ -21,25 +30,24 @@ main {
     background-size: cover;
     height: 100vh;
     text-align: right;
-    position: relative;
 }
 .banner-text {
-    position: absolute;
-    top: 230px;
-    bottom: 165px;
-    right: 230px;
-    width: 500px;
+    padding-top: 230px;
+    padding-right: 230px;
 }
+
 .banner-text h1 {
-    color:#151414;
+    color: #151414;
     font-size: 65px;
     font-weight: 700;
     margin-bottom: 20px;
 }
+
 .banner-text p {
-    color:#444343;
+    color: #444343;
     margin-bottom: 30px;
 }
+
 .primary-btn {
     cursor: pointer;
     width: 160px;
@@ -47,7 +55,7 @@ main {
     background-color: #F15B22;
     border: none;
     border-radius: 5px;
-    color: #fff;
+    color: #F8F8F8;
     font-size: 20px;
     font-weight: 700;
     box-shadow: 1px 16px 17px -9px #000000bf;
@@ -55,53 +63,142 @@ main {
 
 /* about part  */
 
-.about-bg{
+.about-bg {
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: left;
 }
-.about-text{
+
+.about-text {
     width: 410px;
 }
+
 .about-text h3 {
     font-weight: 700;
     font-size: 40px;
     color: #151414;
     margin-bottom: 20px;
 }
-.about-text p{
+
+.about-text p {
     color: #444343;
     margin-bottom: 10px;
 }
+
 .about-text ul li {
-    list-style: none;
     padding-top: 8px;
 
 }
+
 .about-text ul li i {
     color: #16D887;
 }
-.my-plan{
+/* My Plan part */
+.my-plan {
     margin-top: 100px;
+    margin-bottom: 100px;
     text-align: center;
 }
-.my-items{
+
+.my-items {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.plan-title{
-    margin-bottom: 20px;
+
+.my-items {
+    margin-top: 50px;
 }
-.plan-title h3{
+
+.plan-title h3 {
     font-weight: 700;
     font-size: 40px;
     color: #151414;
-    padding-bottom: 20px;
 }
+
 .my-items h3 {
     font-weight: 700;
-    font-size: 38px;
+    font-size: 30px;
     color: #151414;
+    padding-top: 20px;
+    padding-bottom: 15px;
 }
+
+.my-items p {
+    font-size: 25px;
+    color: #737272;
+}
+
+/* Contact section  */
+.contact {
+    background-image: linear-gradient(90deg, rgba(241, 91, 34, 1) 0%, rgba(255, 255, 255, 0) 100%), url(/assets/images/watch.png);
+    height: 300px;
+    border-radius: 5px;
+}
+.contact-text {
+    padding-top: 55px;
+    padding-left: 65px;
+
+}
+
+.contact-text h3 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #F8F8F8;
+    margin-bottom: 20px;
+}
+
+.contact-text .primary-btn, .footer-item .primary-btn {
+    background-color: #F8F8F8;
+    color: #F15B22;
+}
+/* footer section  */
+footer {
+    background: #151414;
+}
+.footer-part {
+    padding: 120px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-item {
+    width: 480px;
+}
+.footer-item h3{
+    font-weight: 700;
+    font-size: 45px;
+    color: #F8F8F8;
+    margin-bottom: 15px;
+}
+.footer-item p{
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.footer-item ul {
+    display: flex;
+}
+.footer-item ul li a{
+    font-size: 45px;
+    color: #fff;
+    margin-right: 15px;
+}
+.footer-item legend {
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+#email {
+    width: 325px;
+    height: 65px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    margin-bottom: 15px;
+    background: transparent;
+}
+::placeholder {
+    color: #fff;
+    padding-left: 20px;
+}
+/* end  */
