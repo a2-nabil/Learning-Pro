@@ -20,18 +20,51 @@ ul li {
 a {
     text-decoration: none;
 }
-
+/* Nav part  */
+nav {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+nav h2 {
+    font-size: 65px;
+    font-weight: 700;
+    color: #F15B22;
+}
+.header ul li {
+    display: inline-block;
+    
+}
+.header ul li a{
+    font-size: 25px;
+    color: #151414;
+    margin-left: 20px;
+}
+.header ul li a:hover{
+    color: #F15B22;
+}
+.header ul li a.active{
+    color: #F15B22;
+}
+.header .primary-btn {
+    box-shadow: none;
+    border-radius: 50px;
+}
 
 /* Banner part style  */
-.banner-img {
-    background-image: url(/assets/images/banner/banner1.png);
+.banner-bg {
+    background-image: url(../images/banner/banner1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    text-align: right;
+   
 }
 .banner-text {
+    text-align: right;
     padding-top: 230px;
     padding-right: 230px;
 }
@@ -132,7 +165,7 @@ a {
 
 /* Contact section  */
 .contact {
-    background-image: linear-gradient(90deg, rgba(241, 91, 34, 1) 0%, rgba(255, 255, 255, 0) 100%), url(/assets/images/watch.png);
+    background-image: linear-gradient(90deg, rgba(241, 91, 34, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../images/watch.png);
     height: 300px;
     border-radius: 5px;
 }
@@ -177,9 +210,7 @@ footer {
 .footer-item ul {
     display: flex;
 }
-.footer-item ul li a{
-    font-size: 45px;
-    color: #fff;
+.footer-item ul li{
     margin-right: 15px;
 }
 .footer-item legend {
